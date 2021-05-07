@@ -9,6 +9,8 @@ function App() {
   Define state variables for 
   contacts and appointments 
   */
+  const [contacts, setContacts] =  useState([]);
+  const [appointments, setAppointments] = useState([]);
 
   const ROUTES = {
     CONTACTS: "/contacts",
@@ -19,6 +21,24 @@ function App() {
   Implement functions to add data to
   contacts and appointments
   */
+ 
+
+  /* Define a callback function that, 
+  given a name, phone number, and email, 
+  adds a new contact object with that data 
+  to the array of contacts*/
+  const addContact = (name, phone, email ) => {
+    setContacts( prev => [...prev, {name, phone, email}]);
+  };
+
+
+  /*Define a callback function that, given a title, 
+  contact, date, and time, adds a new appointment object 
+  with that data to the array of appointments */
+  const addAppointment = (title, contact, date, time) => {
+    setAppointments( prev => [...prev, {title, contact, date, time}]);
+  };
+
 
   return (
     <>
