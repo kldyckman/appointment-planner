@@ -48,11 +48,23 @@ export const ContactsPage = () => {
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Add Contact</h2>
+        <ContactForm
+          name={name}
+          phone={phone}
+          email={email}
+          setName={setName}
+          setPhone={setPhone}
+          setEmail={setEmail}
+          handleSubmit={handleSubmit}
+         /> 
       </section>
       <hr />
       <section>
         <h2>Contacts</h2>
+        <TileList
+          contacts={props.contacts}
+         />
       </section>
     </div>
   );
