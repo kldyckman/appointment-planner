@@ -63,7 +63,7 @@ export const ContactsPage = (props) => {
       <section>
         <h2>Contacts</h2>
         <TileList
-          contacts={props.contacts}
+          objArr={props.contacts}
          />
       </section>
     </div>
