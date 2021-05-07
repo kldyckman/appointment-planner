@@ -22,12 +22,28 @@ export const ContactsPage = () => {
     Add contact info and clear data
     if the contact name is not a duplicate
     */
+    if (!duplicate) {
+      addContact(name, phone, email);
+      setName('');
+      setPhone('');
+      setEmail('');
+    }
   };
 
   /*
   Using hooks, check for contact name in the 
   contacts array variable in props
   */
+
+  useEffect( () => {
+    for (const contact of contacts) {
+      if (name === contact.name) {
+        setDuplicate(true);
+      }
+
+      return;
+    }
+  });
 
   return (
     <div>
