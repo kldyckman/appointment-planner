@@ -1,13 +1,21 @@
+html {
+  background-color: #5d3137;
+}
+
+body {
+  margin: 0;
+}
+
 #root {
-  padding: 30px;
   font-family: "Open Sans", sans-serif;
+  background: #7e4950;
 }
 
 nav > a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   margin-right: 30.5px;
   text-decoration-line: none;
 }
@@ -17,20 +25,22 @@ nav > a.active {
 }
 
 nav {
-  padding-bottom: 20px;
+  padding: 20px;
   border-bottom: 1px solid #979797;
-  margin-bottom: 20px;
 }
 
 h2 {
   font-weight: bold;
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 18px;
 }
 
-section {
+main {
+  padding: 30px 400px;
+  background: #5d3137;
+  border-radius: .5rem;
 }
 
 hr {
@@ -40,7 +50,7 @@ hr {
 }
 
 input[type="submit"] {
-  background: #03a8d8;
+  background: #a4646c;
   border-radius: 4px;
   color: #ffffff;
   font-weight: bold;
@@ -79,4 +89,18 @@ select {
 
 .tile-container {
   margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  main {
+    padding: 30px 200px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  main {
+    padding: 30px;
+  }
 }
