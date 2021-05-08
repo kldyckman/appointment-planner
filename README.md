@@ -4,11 +4,13 @@
 
 This project uses functional React components to create an app that manages contacts and appointments. The app consists of two pages: one to view and add contacts and one to view and add appointments.
 
- ![Diagram](https://static-assets.codecademy.com/skillpaths/react-redux/appointments-components.png)
-
 **Component Diagram**
 
+![Diagram](https://static-assets.codecademy.com/skillpaths/react-redux/appointments-components.png)
+
 The project cotnains stateful and stateless functional React components using hooks and was implemented the app from the topmost component down.
+
+You can view the project in action at [https://kldyckman.github.io/appointment-planner/](https://kldyckman.github.io/appointment-planner/).
 
 ---
 
